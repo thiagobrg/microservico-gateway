@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+      - id: Microservice-um
+        uri: lb://Microservice-um
+        predicates:
+        - Path=/microservice-um/**
+  application:
+    name: microservice-gateway
