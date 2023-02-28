@@ -5,8 +5,8 @@ spring:
         locator:
           enabled: true
       routes:
-      - id: Microservice-um
-        uri:  http://Microservice-um
+      - id: microservice-um
+        uri:  http://microservice-um:8080
         predicates:
         - Path=/microservice-um/**
   application:
