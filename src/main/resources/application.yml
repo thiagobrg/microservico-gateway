@@ -6,7 +6,7 @@ spring:
           enabled: true
       routes:
       - id: microservice-um
-        uri:  http://microservico-um:8080
+        uri:  http://microservico-um
         predicates:
         - Path=/microservico-um/**
   application:
